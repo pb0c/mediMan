@@ -9,18 +9,19 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-<header><!--Header-->	
-		<div class="container ">
-			<div class="logo">
-				<img src="img/logoRS.png" width="90px" height="60px">
-					<div class="barra float-right ">
-						<label>Bienvenido</label></br>			
-						<input type="search" class="search-control" placeholder="Buscar Paciente">
-						<button type="submit" class="btnSearch">Ir</button>
-					</div>
-			</div>
-		</div><!--fin container-->
-    </header><!--fin Header-->
+	<header>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	  		<img src="img/logoRS.png" width="100px" height="60px">
+        		<div class="navbar " id="" style="">
+          		<form class="form-inline mt-2 mt-md-1">
+				<label>Bienvenido</label>
+            	<input class="form-control mr-sm-0" type="text" placeholder="Buscar Paciente" aria-label="Search">
+            	<button class="btn btn-outline-success  my-sm-0" type="submit">Ir</button>
+          </form>
+        </div>
+      </nav>
+	</header>
     
     <nav>
 		<h4>Agenda Diaria Rehabilita Salud</h4>
@@ -37,11 +38,10 @@
 	
 
 
-	<!-- Footer -->
-	<footer class="page-footer">
+	<footer class="page-footer font-small white ">
 		<!-- Copyright -->
-		<div class="footer-copyright">
-			<p>©Copyright 2020 by Paulina Bordones. All rights reserved.</p>
+		<div class="footer-copyright text-center py-3">
+			©Copyright 2020 by Paulina Bordones. All rights reserved.
 		</div>
 		<!-- Copyright -->
 	</footer>

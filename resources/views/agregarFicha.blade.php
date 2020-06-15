@@ -9,32 +9,39 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-<header><!--Header-->	
-		<div class="container ">
-			<div class="logo">
-				<img src="img/logoRS.png" width="90px" height="60px">
-					<div class="barra float-right ">
-						<label>Bienvenido</label></br>			
-						<input type="search" class="search-control" placeholder="Buscar Paciente">
-						<button type="submit" class="btnSearch">Ir</button>
-					</div>
-			</div>
-		</div><!--fin container-->
-    </header><!--fin Header-->
+<header>
+	<!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	  <img src="img/logoRS.png" width="100px" height="60px">
+        <div class="navbar " id="" style="">
+          <form class="form-inline mt-2 mt-md-1">
+			<label>Bienvenido</label>
+            <input class="form-control mr-sm-0" type="text" placeholder="Buscar Paciente" aria-label="Search">
+            <button class="btn btn-outline-success  my-sm-0" type="submit">Ir</button>
+          </form>
+        </div>
+      </nav>
+	</header>
     
-    <main>
-		<h4>Nueva Ficha Clínica</h4>
-		<form action="">
-			<input type="text" id="ficha" placeholder="N° Ficha">
-			<input type="text" id="nombre" placeholder="Nombre"></br>
-			<input type="text" id="medico" placeholder="Médico Tratante"></br>
-			<input type="text" id="dg" placeholder="Diagnóstico"></br>
-			<input type="text" id="tto" placeholder="Tratamiento"></br>
-			<input type="text" id="med" placeholder="Medicamento"></br>
-			<input type="text" id="ant" placeholder="Antecendentes Mórbidos"></br>
-			<button type="submit" name="btnAgregar">Agregar</button>
-		</form>
-    </main>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div>
+					<label>Nueva Ficha Clínica</label>
+				</div>
+				<div>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
 
 	
 	
