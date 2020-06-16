@@ -125,14 +125,14 @@ footer{
  }
 
  button{
-	 width: 60%;
+	 width: 100%;
 	 margin: 5px 0 25px;
 }
 
 .btn{
 	 background-color: #134C89;
 	 color: #fff;
-	 font-size: 19px;
+	 font-size: 16px;
 	 padding: 7px 14px;
 	 border-radius: 15px;
 	 border-bottom: 4px solid #0A2542;

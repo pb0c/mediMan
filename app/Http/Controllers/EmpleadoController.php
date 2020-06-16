@@ -23,6 +23,15 @@ class EmpleadoController extends Controller
     public function ver(){
         return view('verPaciente');
     }
+    public function editPaciente(){
+        return view('editPaciente');
+    }
+    public function editFicha(){
+        return view('editFicha');
+    }
+    public function buscar(){
+        return view('busqueda');
+    }
 
     public function agEmp(Request $request){
         $empleado = new Empleado() ;
@@ -35,7 +44,7 @@ class EmpleadoController extends Controller
         $empleado -> passwordempleado = $request -> password;
         $empleado -> save();
 
-        return redirect('/create');
+        return redirect('/home');
        
     }
     

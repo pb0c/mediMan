@@ -124,19 +124,18 @@ footer{
     margin-top: 5px;
 }
 
-.form-group select{
+.btn{
+    width: 50%;
     height: 30px;
-   border: 1;
-   font-size: 16px;
-   padding-left: 16px;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   width: 100%;
+    margin: 5px 0 25px;
+
 }
 
-button{
-    width: 100%;
-    margin: 5px 0 25px;
+.btn::before{
+    font-family: 'Font Awesome\ 5 free';
+	content: "\f002";
+	position: relative;
+    color: #fff;
 }
 
 .btn{
@@ -148,3 +147,22 @@ button{
     border-bottom: 4px solid #0A2542;
     opacity: .99;
 }
+
+.btn2{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 25px;
+
+}
+
+.btn2{
+    background-color: #134C89;
+    color: #fff;
+    font-size: 16px;
+    padding: 7px 14px;
+    border-radius: 15px;
+    border-bottom: 4px solid #0A2542;
+    opacity: .99;
+}
+
+

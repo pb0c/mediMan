@@ -140,7 +140,7 @@
 					<input class="form-control" type="text" name="" id="" placeholder="Diagnóstico" require>
 				</div>
 			</div><!--fin row 5-->
-			<div class="row">
+			<div class="row"><!--inicio row 6-->
 				<div class="form-group col mb-1">	
 					<label for="medicamento">Medicamento</label>
 					<textarea class="form-control" id="" rows="5" placeholder="Medicamento" require></textarea>
@@ -149,10 +149,24 @@
 					<label for="ant">Antecedentes Mórbidos</label>
 					<textarea class="form-control" id="" rows="10" placeholder="Antecedentes Mórbidos" require></textarea>
 				</div>
-			</div>
-			<div class="row">
-				<div class="offset-lg-10 col-lg-2 offset-sm-10 col-sm-2">
+			</div><!--fin row 6-->
+			<div class="row"><!--inicio row 7-->
+				<div class="offset-lg-6 col-lg-2 col-sm-2">
+				<button type="submit" class="btn" name="guardar">Editar Paciente</button>
+				</div>
+				<div class="col-lg-2 col-sm-2">
+				<button type="submit" class="btn" name="guardar">Editar Ficha</button>
+				</div>
+				<div class="col-lg-2 col-sm-2">
 				<button type="submit" class="btn" name="guardar">Guardar</button>
+				</div>
+			</div>
+			<div class="row"><!--inicio row 8-->
+				<div class="offset-lg-8 col-lg-2 col-sm-2">
+				<button type="submit" class="btn" name="guardar">Eliminar Ficha</button>
+				</div>
+				<div class="col-lg-2 col-sm-2">
+				<button type="submit" class="btn" name="guardar">Eliminar Paciente</button>
 				</div>
 			</div>
             </form><!--fin form-->

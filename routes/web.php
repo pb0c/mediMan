@@ -29,3 +29,5 @@ Route::get('/agregarFicha', 'EmpleadoController@nuevaF');
 Route::get('/agregarPaciente', 'EmpleadoController@nuevoP');
 
 Route::get('/verPaciente', 'EmpleadoController@ver');
+
+Route::get('/busqueda', 'EmpleadoController@buscar');
