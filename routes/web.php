@@ -25,3 +25,7 @@ Route::get('/home', 'LoginController@vista');
 Route::get('/vistaDia', 'EmpleadoController@dia');
 
 Route::get('/agregarFicha', 'EmpleadoController@nuevaF');
+
+Route::get('/agregarPaciente', 'EmpleadoController@nuevoP');
+
+Route::get('/verPaciente', 'EmpleadoController@ver');

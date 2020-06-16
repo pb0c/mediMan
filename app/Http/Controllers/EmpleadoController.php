@@ -17,6 +17,12 @@ class EmpleadoController extends Controller
     public function nuevaF(){
         return view('agregarFicha');
     }
+    public function nuevoP(){
+        return view('agregarPaciente');
+    }
+    public function ver(){
+        return view('verPaciente');
+    }
 
     public function agEmp(Request $request){
         $empleado = new Empleado() ;

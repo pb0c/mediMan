@@ -28,27 +28,12 @@
 			<!--encabezado-->
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 d-flex justify-content-center">
-					<label for="nueva" class="h4">Nuevo Paciente</label>
+					<label for="nueva" class="h4">Juanito Pérez</label>
 				</div>
-			</div><!--fin encabezado-->
+            </div><!--fin encabezado-->
+            <!--vista paciente-->
 			<form action="">
 				<div class="row"><!--inicio row 1-->
-					<div class="form-group col-lg-3 col-sm-3 my-1">
-						<label for="">Nombre</label>
-						<input type="text" class="form-control" name="" id="nom" placeholder="Ej. Juan">
-					</div>
-					<div class="form-group col-lg-3 col-sm-3 my-1">
-						<label for="">Apellido Paterno</label>
-						<input type="text" class="form-control" name="" id="appP" placeholder="Ej. Pérez">
-					</div>
-					<div class="form-group col-lg-3 col-sm-3 my-1">
-						<label for="">Apellido Materno</label>
-						<input type="text" class="form-control" name="" id="appM" placeholder="Ej. Pérez">
-					</div>
-					<div class="form-group offset-lg-1 offset-sm-1 col-lg-2 col-sm-3 my-1">
-						<label for="">N° Ficha</label>
-						<input type="text" class="form-control" name="" id="nficha" placeholder="N°Ficha">
-					</div>
 				</div><!--fin row 1-->
 				<div class="row"><!--inicio row 2-->
 					<div class="form-group col-lg-3 col-sm-3 my-1">
@@ -129,13 +114,49 @@
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<input type="text" class="form-control" name="" id="" placeholder="Comuna">
 					</div>
-					</div><!--fin row-->
-					<div class="row">
-					<div class="offset-lg-10 col-lg-2 offset-sm-10 col-sm-2">
-						<button type="submit" class="btn" name="guardar">Guardar</button>
-					</div>
+					</div><!--fin row 3-->
+            </form><!--fin form-->
+            <!--fin vista paciente-->
+            <!--vista ficha-->
+            <!--encabezado-->
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 d-flex justify-content-center">
+					<label for="nueva" class="h4">Antecedentes Clínicos</label>
 				</div>
-			</form>
+			</div><!--fin encabezado-->
+            <form action=""><!--inicio form-->
+            <div class="row"><!--inicio row 4-->
+            <!--Pendiente select para ficha-->
+					<div class="form-group offset-lg-10 offset-sm-10 col-lg-2 col-sm-3 my-1">
+						<label for="">N° Ficha</label>
+						<input type="text" class="form-control" name="" id="nficha" placeholder="N°Ficha">
+					</div>
+				</div><!--fin row 4-->
+			<div class="row"><!--inicio row 5-->
+				<div class="form-group col-lg-4 col-sm-6 my-1">
+					<label for="medico">Médico Tratante</label>
+					<input class="form-control" type="text" name="" id="" placeholder="Médico Tratante" require>
+					<label for="diagnostico">Diagnóstico</label>
+					<input class="form-control" type="text" name="" id="" placeholder="Diagnóstico" require>
+				</div>
+			</div><!--fin row 5-->
+			<div class="row">
+				<div class="form-group col mb-1">	
+					<label for="medicamento">Medicamento</label>
+					<textarea class="form-control" id="" rows="5" placeholder="Medicamento" require></textarea>
+					<label for="tratamiento">Tratamiento</label>
+					<textarea class="form-control" id="" rows="5" placeholder="Tratamiento" require></textarea>
+					<label for="ant">Antecedentes Mórbidos</label>
+					<textarea class="form-control" id="" rows="10" placeholder="Antecedentes Mórbidos" require></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-lg-10 col-lg-2 offset-sm-10 col-sm-2">
+				<button type="submit" class="btn" name="guardar">Guardar</button>
+				</div>
+			</div>
+            </form><!--fin form-->
+            <!--fin vista ficha-->
 		</div><!--fin container-->
 				
     </main>

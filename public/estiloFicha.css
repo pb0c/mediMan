@@ -7,7 +7,8 @@ body{
 	background-position: absolute;
 	background-attachment: fixed;
     background-color: rgba(25,109,200, .5);
-    margin-top: 70px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
 	/*Compatibilidad*/
 	-moz-background-size:cover;
@@ -122,3 +123,18 @@ footer{
      margin-bottom: 0px;
      margin-top: 5px;
  }
+
+ button{
+	 width: 60%;
+	 margin: 5px 0 25px;
+}
+
+.btn{
+	 background-color: #134C89;
+	 color: #fff;
+	 font-size: 19px;
+	 padding: 7px 14px;
+	 border-radius: 15px;
+	 border-bottom: 4px solid #0A2542;
+	 opacity: .99;
+}
