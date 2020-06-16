@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="estiloFicha.css">
 </head>
 <body>
 <header>
@@ -24,29 +24,43 @@
 	</header>
     
 	<main>
+		<!--contenedor-->
 		<div class="container">
+			<!--encabezado-->
 			<div class="row">
-				<div>
-					<label>Nueva Ficha Clínica</label>
+				<div class="col-lg-12 d-flex justify-content-center">
+					<label for="nueva" class="h4">Nueva Ficha Clínica</label>
 				</div>
-				<div>
-					<ul>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
+			</div><!--fin encabezado-->
+			<div class="row">
+				<div class="form-group col-lg-4 col-sm-6 my-1">
+					<label for="nombre">Paciente</label>
+					<input class="form-control" type="text" name="" id="" placeholder="Paciente" require>
+					<label for="medico">Médico Tratante</label>
+					<input class="form-control" type="text" name="" id="" placeholder="Médico Tratante" require>
+					<label for="diagnostico">Diagnóstico</label>
+					<input class="form-control" type="text" name="" id="" placeholder="Diagnóstico" require>
+				</div>
+				<div class="form-group col-lg-2 lg-offset-2 col-sm-2 sm-offset-2 my-1" style="background-color:#134C89">
+					<label for="ficha">N° Ficha</label>
+					<input type="text" class="form-control" name="" id="" placeholder="N°Ficha">
 				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="form-group col mb-1">	
+					<label for="medicamento">Medicamento</label>
+					<textarea class="form-control" id="" rows="10" placeholder="Medicamento" require></textarea>
+					<label for="tratamiento">Tratamiento</label>
+					<textarea class="form-control" id="" rows="10" placeholder="Tratamiento" require></textarea>
+					<label for="ant">Antecedentes Mórbidos</label>
+					<textarea class="form-control" id="" rows="10" placeholder="Antecedentes Mórbidos" require></textarea>
+				</div>
+			</div>
+		</div><!--fin contenedor-->
 	</main>
 
 	
-	
-
-
+	<!--Footer-->
 	<footer class="page-footer font-small white ">
 		<!-- Copyright -->
 		<div class="footer-copyright text-center py-3">
