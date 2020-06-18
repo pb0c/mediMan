@@ -31,3 +31,14 @@ Route::get('/agregarPaciente', 'EmpleadoController@nuevoP');
 Route::get('/verPaciente', 'EmpleadoController@ver');
 
 Route::get('/busqueda', 'EmpleadoController@buscar');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

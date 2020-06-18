@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vista Calendario</title>
+	<title>Vista Paciente</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -38,7 +38,7 @@
 				<div class="row"><!--inicio row 2-->
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">RUT</label>
-						<input type="text" class="form-control" name="" id="rut" placeholder="Ej. 11.111.111-1">
+						<input type="text" class="form-control" name="" id="rut" placeholder="Ej. 11.111.111-1" readonly>
 					</div>
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">Previsión</label>
@@ -55,17 +55,17 @@
 					</div>
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">Fecha de Nacimiento</label>
-						<input type="date" class="form-control" name="" id="">
+						<input type="date" class="form-control" name="" id="" require>
 					</div>
 				</div><!--fin row 2-->
 				<div class="row"><!--inicio row 3-->
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">Teléfono</label>
-						<input type="text" class="form-control" name="" id="" placeholder="Ej. 9-12312312">
+						<input type="text" class="form-control" name="" id="" placeholder="Ej. 9-12312312" require>
 					</div>
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">Sexo</label>
-						<select name="" id="sexo" class="form-control">
+						<select name="" id="sexo" class="form-control" require>
 							<option value="">Seleccione</option>
 							<option value="">Femenino</option>
 							<option value="">Masculino</option>
@@ -73,7 +73,7 @@
 					</div>
 					<div class="form-group col-lg-3 col-sm-3 my-1">
 						<label for="">Deporte</label>
-						<select name="" id="dep" class="form-control" >
+						<select name="" id="dep" class="form-control">
 							<option value="">Seleccione</option>
 							<!--lista tab deporte-->
 							
