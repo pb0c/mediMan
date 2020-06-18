@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Consulta extends Model
 {
-    protected $table ='consultas';
+    public function paciente()
+    {
+        return $this->belongsTo(Paciente::class);
+    }
+    public function empleado()
+    {
+        return $this->belongsTo(Empleado::class);
+    }
 }
