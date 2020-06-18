@@ -27,6 +27,7 @@ class Paciente extends Model
         'nacimiento' => 'datetime:d-m-Y',
     ];
 
+<<<<<<< HEAD
     /*Consulta
     public function paciente()
     {
@@ -61,4 +62,6 @@ class Paciente extends Model
             $table->timestamps();
         }); */
 
+=======
+>>>>>>> d7f6f0d8eaefb3bc967a072729cc375a4502cc13
 }
