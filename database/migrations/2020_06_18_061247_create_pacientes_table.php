@@ -13,7 +13,6 @@ class CreatePacientesTable extends Migration
      */
     public function up()
     {
-<<<<<<< HEAD
         Schema::create('actividads', function (Blueprint $table) { //creación tabla actividads
             $table->bigIncrements('id');
             $table->string('actNombre');
@@ -33,14 +32,6 @@ class CreatePacientesTable extends Migration
             $table->string('nombre');
             $table->string('apellidoP');
             $table->string('apellidoM')->nullable();
-=======
-        Schema::create('pacientes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('rut');
-            $table->string('nombre');
-            $table->string('apellidoP');
-            $table->string('apellidoM');
->>>>>>> d7f6f0d8eaefb3bc967a072729cc375a4502cc13
             $table->date('nacimiento');
             $table->integer('edad');
             $table->boolean('sexo');
@@ -48,7 +39,6 @@ class CreatePacientesTable extends Migration
             $table->string('prevision');
             $table->string('calle');
             $table->integer('numero');
-<<<<<<< HEAD
             $table->string('dpto')->nullable();
             $table->string('comuna');
             //FK's
@@ -63,17 +53,6 @@ class CreatePacientesTable extends Migration
     }
 
 
-=======
-            $table->string('dpto');
-            $table->string('comuna');
-            $table->unsignedInteger('actividad_id'); //relación con actividad
-            $table->unsignedInteger('deporte_id'); //relación con categoría
-            $table->timestamps();
-        });
-    }
-
-    
->>>>>>> d7f6f0d8eaefb3bc967a072729cc375a4502cc13
 
     /**
      * Reverse the migrations.
@@ -82,11 +61,8 @@ class CreatePacientesTable extends Migration
      */
     public function down()
     {
-<<<<<<< HEAD
         Schema::dropIfExists('actividads');
         Schema::dropIfExists('deportes');
-=======
->>>>>>> d7f6f0d8eaefb3bc967a072729cc375a4502cc13
         Schema::dropIfExists('pacientes');
     }
 }

@@ -32,15 +32,20 @@ class EmpleadoController extends Controller
     public function buscar(){
         return view('busqueda');
     }
+    public function diaria()
+    {
+        return view('vistaDia');
+    }
 
     public function agEmp(Request $request){
         $empleado = new Empleado() ;
 
-        $empleado -> rutempleado = $request -> rut;
-        $empleado -> nombreempleado = $request -> nombre;
-        $empleado -> apellidoempleado = $request -> apellido;
-        $empleado -> rolempleado = $request -> rol;
-        $empleado -> telefonoempleado = $request -> telefono;
+        $empleado -> rut = $request -> rut;
+        $empleado -> nombre = $request -> nombre;
+        $empleado -> apellidoP = $request -> apP;
+        $empleado -> apellidoM = $request -> apM;
+        $empleado -> rol = $request -> rol;
+        $empleado -> telefono = $request -> telefono;
         $empleado -> passwordempleado = $request -> password;
         $empleado -> save();
 

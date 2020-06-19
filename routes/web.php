@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Monolog\Handler\RotatingFileHandler;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,14 +32,5 @@ Route::get('/agregarPaciente', 'EmpleadoController@nuevoP');
 Route::get('/verPaciente', 'EmpleadoController@ver');
 
 Route::get('/busqueda', 'EmpleadoController@buscar');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/vistaDia','EmpleadoController@diaria');

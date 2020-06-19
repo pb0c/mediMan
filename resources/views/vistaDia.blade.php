@@ -23,7 +23,7 @@
       </nav>
 	</header>
     
-    <nav>
+    <main>
 		<h4>Agenda Diaria Rehabilita Salud</h4>
 		<label>20 Mayo 2020</label>
 		<table border="1px">
@@ -34,7 +34,7 @@
 				}
 			?>
 		</table>
-	</nav>
+	</main>
 	
 
 
