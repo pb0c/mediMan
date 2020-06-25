@@ -18,19 +18,18 @@ use Monolog\Handler\RotatingFileHandler;
     //return view('welcome');
 //});
 
-Route::get('/agEmp','EmpleadoController@vista');
-Route::post('/agEmp','EmpleadoController@create');
+/*Route::post('/','EmpleadoController@agEmp')->name('verEmp');
 
-Route::get('/home', 'LoginController@vista');
+Route::get('/verEmp','EmpleadoController@verE');
+Route::post('/verEmp','EmpleadoController@destroy');
 
-Route::get('/vistaDia', 'EmpleadoController@dia');
+Route::get('/empleados','EmpleadoController@index');
 
-Route::get('/agregarFicha', 'EmpleadoController@nuevaF');
+Route::get('/empleados/create', 'EmpleadoController@create');
+Route::post('/empleados', 'EmpleadoController@create');*/
 
-Route::get('/agregarPaciente', 'EmpleadoController@nuevoP');
+Route::resource('empleados', 'EmpleadoController');
 
-Route::get('/verPaciente', 'EmpleadoController@ver');
+Route::resource('pacientes', 'PacienteController');
 
-Route::get('/busqueda', 'EmpleadoController@buscar');
-
-Route::get('/vistaDia','EmpleadoController@diaria');
+Route::resource('fichas', 'FichaController');

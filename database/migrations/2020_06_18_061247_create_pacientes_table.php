@@ -42,9 +42,9 @@ class CreatePacientesTable extends Migration
             $table->string('dpto')->nullable();
             $table->string('comuna');
             //FK's
-            $table->unsignedBigInteger('actividad_id'); //relación con actividad
+            $table->unsignedBigInteger('actividad_id')->nullable(); //relación con actividad
             $table->foreign('actividad_id')->references('id')->on('actividads'); //Fk desde actividad
-            $table->unsignedBigInteger('deporte_id'); //relación con deporte
+            $table->unsignedBigInteger('deporte_id')->nullable(); //relación con deporte
             $table->foreign('deporte_id')->references('id')->on('deportes'); //FK desde deporte
 
             $table->timestamps();

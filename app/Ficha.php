@@ -10,8 +10,7 @@ class Ficha extends Model
     {
         return $this->belongsTo(Paciente::class);
     }
-    
-    public function empleado(){
-        return $this->belongsTo(Empleado::class);
-    }
+ 
 }
+
+
